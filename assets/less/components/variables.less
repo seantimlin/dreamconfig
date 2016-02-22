@@ -1,0 +1,72 @@
+/************************************************
+
+Variables & Mixins
+
+*************************************************/
+
+/***************** 
+	Mixins 
+******************/
+
+@baseFontSize: 16;
+
+.font-size(@font-size: @baseFontSize) {
+	@rem: (@font-size / @baseFontSize);
+	font-size: @font-size * 1px;
+	font-size: ~"@{rem}rem"; 
+}
+
+/***************** 
+	Variables
+******************/
+
+/* Colors */
+@black: #000000;
+@white: #FFFFFF;
+@off-white: #F7F3EA;
+@light-grey: #EEFAFB;
+@medium-grey: #D6E1E1;
+@dark-grey: #383838;
+@social-icon-grey: #B7BFC0;
+@pink: #F57A82;
+@light-pink: #F2869F;
+@btn-pink: #ED5276;
+@services-green: #5DB5A4;
+@services-green-light: #8ECBBF;
+@testimonial-pink: #ED5276;
+@footer-bg: #E7E7E7;
+@footer-color: #B2B2B2;
+@fixed-nav-light-grey: #D6CECF;
+
+/* Skills Percentage Colors */
+@web-design: #3C989E;
+@html: #ED5276;
+@graphic: #5DB5A4;
+@ux: #F57A82;
+
+/* Font-Family */
+@raleway: 'Raleway', sans-serif;
+@oxygen: 'Oxygen', sans-serif;
+
+@media screen and (max-width: 299px) {
+    .glyphicon {
+        font-size: 1.2em;
+    }
+}
+
+/***************** 
+	MISC
+******************/
+
+@media screen and (max-width: @screen-md) {
+	br {
+		display: none;
+	}
+}
+
+::-webkit-input-placeholder { color: @dark-grey !important; }
+::-moz-placeholder { color: @dark-grey !important; } /* firefox 19+ */
+:-ms-input-placeholder { color: @dark-grey !important; } /* ie */
+input:-moz-placeholder { color: @dark-grey !important; }
+
+

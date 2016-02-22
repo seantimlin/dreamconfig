@@ -1,0 +1,47 @@
+/************************************************
+
+Typography Styling
+
+*************************************************/
+
+html {
+	font-size: 100%;
+}
+
+h1 {
+	font-family: @raleway;
+	line-height: 1.2;
+}
+
+h2 {
+	font-family: @oxygen;
+	letter-spacing: 3px;
+	margin: 0 0 55px 0;
+	text-transform: uppercase;
+	.font-size(38);
+	&:after {
+		content: '';
+		position: absolute;
+		display: block;
+		margin: 0 auto;
+		left: 0;
+		right: 0;
+		margin-top: 18px;
+		width: 88px;
+		height: 4px;
+	}
+}
+
+h3 {
+	font-family: @oxygen;
+	letter-spacing: 3px;
+	text-transform: uppercase;
+	.font-size(22);
+}
+
+h4 {
+	font-family: @oxygen;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	.font-size(12);
+}

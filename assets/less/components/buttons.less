@@ -1,0 +1,79 @@
+/************************************************
+
+Button Styles
+
+*************************************************/
+
+button {
+	transition: all 225ms ease;
+}
+
+.btn {
+	text-transform: uppercase;
+
+	/* Types */
+	&--solid-white {
+		background-color: @white;
+		color: @white;
+		border: 2px solid @white;
+		&:hover {
+			background-color: transparent;
+			color: @white;
+		}
+	}
+	&--solid-pink {
+		background-color: @btn-pink;
+		color: @white;
+		border: 2px solid @btn-pink;
+		padding: 15px 40px !important;
+		outline: 0;
+		box-shadow: none;
+		&:hover {
+			background-color: transparent;
+			color: @btn-pink;
+		}
+		&:focus {
+			border: 2px solid @btn-pink;
+		}
+		&:active {
+			border: 2px solid @btn-pink;
+		}
+	}
+	&--outline-white {
+		&:hover {
+			border: 1px solid @white;
+			color: @white;
+		}
+	}
+
+	/* Hover */
+	&--hover-grey {
+		&:hover {
+			background-color: #333333;
+		}
+	}
+
+	/* Sizes */
+	&--large {
+		padding: 15px 33px;
+		font-weight: bold;
+		border-radius: 4px;
+		letter-spacing: 2px;
+		.font-size(25);
+		font-family: @oxygen;
+	}
+	&--medium {
+		padding: 10px 15px;
+		border-radius: 3px;
+	}
+	&--small {
+		padding: 3px 12px;
+		border-radius: 4px;
+	}
+
+	/* Positioning */
+	&--centered {
+		display: table;
+		margin: 0 auto;
+	}
+}

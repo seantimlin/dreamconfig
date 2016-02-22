@@ -1,0 +1,31 @@
+/************************************************
+
+Footer Styles
+
+*************************************************/
+
+footer {
+	background-color: @footer-bg;
+	h4 {
+		font-family: @raleway;
+		color: @footer-color;
+		text-align: center;
+		.font-size(16);
+		padding: 55px 0 0 0;
+		margin: 0px;
+	}
+	.icon-group {
+		display: table;
+		margin: 0 auto;
+		padding: 40px 0 60px 0;
+		.social-icon {
+			color: @footer-color;
+			.font-size(40);
+			margin: 0 10px;
+			@media screen and (min-width: @screen-sm) {
+				.font-size(57);
+				margin: 0 15px;
+			}
+		}
+	}
+}
