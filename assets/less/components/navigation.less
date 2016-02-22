@@ -9,7 +9,7 @@ Navigation Styles
 		position: absolute;
 		right: 0;
 		top: 55px;
-		z-index: 1;
+		z-index: 100;
 		font-family: @raleway;
 		li {
 			display: inline-block;
@@ -146,6 +146,9 @@ Navigation Styles
 				background-color: @white;
 				color: @dark-grey;
 				border: 1px solid @fixed-nav-light-grey;
+				&:hover {
+					color: @dark-grey;
+				}
 				&:active {
 					color: @dark-grey !important;
 				}
@@ -165,7 +168,7 @@ Navigation Styles
 	cursor: pointer;
 	user-select: none;
 	opacity: .8;
-	z-index: 100;
+	z-index: 300;
 }
 .navicon-button .navicon:before, .navicon-button .navicon:after {
 	transition: all 0.25s ease;
