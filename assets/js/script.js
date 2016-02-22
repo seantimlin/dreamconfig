@@ -24,9 +24,9 @@ $(document).ready( function() {
 
 	      //initialize the circle pre-animation
 	      circle.attr({
-	        stroke: '#ffffff',
+	        stroke: '#f7f7f7',
 	        fill: 'none',
-	        strokeWidth: 3
+	        strokeWidth: 13
 	      });
 
 	      //empty the percentage
@@ -113,7 +113,10 @@ $(document).ready( function() {
 		var currentPosition = $(document).scrollTop();
 		if (currentPosition > objectPositionTop && eventFired === false) {
 			eventFired = true;
-			$(function(){ stat(); });
+			$(function(){ 
+				$('.per').css({'opacity': 1});
+				stat(); 
+			});
 		}
 
 	});
